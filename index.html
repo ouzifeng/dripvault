@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DripVault - Encrypted Document Sharing for Teams</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><text y='14'>🔒</text></svg>"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="container">
+        <a href="index.html" class="logo">
+          <i class="fas fa-vault"></i>
+          DripVault
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="features.html">Features</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <div class="auth-buttons">
+            <a href="login.html" class="btn btn-secondary">Login</a>
+            <a href="signup.html" class="btn btn-primary">Sign Up</a>
+          </div>
+        </ul>
+        <div class="mobile-menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h1 class="fade-in-up">DripVault</h1>
+          <p class="fade-in-up">
+            Share, track, and expire sensitive files with full audit logs. The
+            most secure way to handle confidential documents in your team.
+          </p>
+          <div class="hero-cta fade-in-up">
+            <a href="signup.html" class="btn btn-primary">
+              <i class="fas fa-rocket"></i>
+              Start Free Trial
+            </a>
+            <a href="features.html" class="btn btn-secondary">
+              <i class="fas fa-play"></i>
+              Watch Demo
+            </a>
+          </div>
+          <div
+            class="screenshot fade-in-up"
+            style="
+              padding: 0;
+              background: #1a1a1a;
+              border: 2px solid #374151;
+              overflow: hidden;
+            "
+          >
+            <!-- Dashboard Mockup -->
+            <div
+              style="
+                background: #111;
+                padding: 1rem;
+                border-bottom: 1px solid #374151;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+              "
+            >
+              <div style="display: flex; align-items: center; gap: 1rem">
+                <div style="color: #dc2626; font-size: 1.2rem">
+                  <i class="fas fa-vault"></i>
+                </div>
+                <span style="color: #f4f4f5; font-weight: 600"
+                  >DripVault Dashboard</span
+                >
+              </div>
+              <div style="display: flex; align-items: center; gap: 1rem">
+                <div
+                  style="
+                    width: 32px;
+                    height: 32px;
+                    background: #dc2626;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: white;
+                    font-size: 0.8rem;
+                  "
+                >
+                  JD
+                </div>
+              </div>
+            </div>
+
+            <div style="display: flex; height: 320px">
+              <!-- Sidebar -->
+              <div
+                style="
+                  width: 200px;
+                  background: #0f0f0f;
+                  border-right: 1px solid #374151;
+                  padding: 1rem;
+                "
+              >
+                <div
+                  style="
+                    color: #a1a1aa;
+                    font-size: 0.7rem;
+                    margin-bottom: 0.5rem;
+                    text-transform: uppercase;
+                    letter-spacing: 0.05em;
+                  "
+                >
+                  Navigation
+                </div>
+                <div style="display: flex; flex-direction: column; gap: 0.5rem">
+                  <div
+                    style="
+                      display: flex;
+                      align-items: center;
+                      gap: 0.5rem;
+                      padding: 0.5rem;
+                      background: rgba(220, 38, 38, 0.1);
+                      border-radius: 6px;
+                      color: #dc2626;
+                      font-size: 0.8rem;
+                    "
+                  >
+                    <i class="fas fa-home" style="width: 12px"></i> Dashboard
+                  </div>
+                  <div
+                    style="
+                      display: flex;
+                      align-items: center;
+                      gap: 0.5rem;
+                      padding: 0.5rem;
+                      color: #a1a1aa;
+                      font-size: 0.8rem;
+                    "
+                  >
+                    <i class="fas fa-file" style="width: 12px"></i> Files
+                  </div>
+                  <div
+                    style="
+                      display: flex;
+                      align-items: center;
+                      gap: 0.5rem;
+                      padding: 0.5rem;
+                      color: #a1a1aa;
+                      font-size: 0.8rem;
+                    "
+                  >
+                    <i class="fas fa-share" style="width: 12px"></i> Shared
+                  </div>
+                  <div
+                    style="
+                      display: flex;
+                      align-items: center;
+                      gap: 0.5rem;
+                      padding: 0.5rem;
+                      color: #a1a1aa;
+                      font-size: 0.8rem;
+                    "
+                  >
+                    <i class="fas fa-chart-bar" style="width: 12px"></i>
+                    Analytics
+                  </div>
+                  <div
+                    style="
+                      display: flex;
+                      align-items: center;
+                      gap: 0.5rem;
+                      padding: 0.5rem;
+                      color: #a1a1aa;
+                      font-size: 0.8rem;
+                    "
+                  >
+                    <i class="fas fa-cog" style="width: 12px"></i> Settings
+                  </div>
+                </div>
+              </div>
+
+              <!-- Main Content -->
+              <div style="flex: 1; padding: 1rem; background: #1a1a1a">
+                <!-- Stats Cards -->
+                <div
+                  style="
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    gap: 1rem;
+                    margin-bottom: 1rem;
+                  "
+                >
+                  <div
+                    style="
+                      background: rgba(30, 30, 30, 0.8);
+                      padding: 1rem;
+                      border-radius: 8px;
+                      border: 1px solid #374151;
+                    "
+                  >
+                    <div
+                      style="
+                        color: #6b7280;
+                        font-size: 0.7rem;
+                        margin-bottom: 0.25rem;
+                      "
+                    >
+                      TOTAL FILES
+                    </div>
+                    <div
+                      style="
+                        color: #f4f4f5;
+                        font-size: 1.2rem;
+                        font-weight: 600;
+                      "
+                    >
+                      1,247
+                    </div>
+                  </div>
+                  <div
+                    style="
+                      background: rgba(30, 30, 30, 0.8);
+                      padding: 1rem;
+                      border-radius: 8px;
+                      border: 1px solid #374151;
+                    "
+                  >
+                    <div
+                      style="
+                        color: #6b7280;
+                        font-size: 0.7rem;
+                        margin-bottom: 0.25rem;
+                      "
+                    >
+                      ACTIVE SHARES
+                    </div>
+                    <div
+                      style="
+                        color: #22c55e;
+                        font-size: 1.2rem;
+                        font-weight: 600;
+                      "
+                    >
+                      89
+                    </div>
+                  </div>
+                  <div
+                    style="
+                      background: rgba(30, 30, 30, 0.8);
+                      padding: 1rem;
+                      border-radius: 8px;
+                      border: 1px solid #374151;
+                    "
+                  >
+                    <div
+                      style="
+                        color: #6b7280;
+                        font-size: 0.7rem;
+                        margin-bottom: 0.25rem;
+                      "
+                    >
+                      STORAGE USED
+                    </div>
+                    <div
+                      style="
+                        color: #dc2626;
+                        font-size: 1.2rem;
+                        font-weight: 600;
+                      "
+                    >
+                      67%
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Recent Files -->
+                <div
+                  style="
+                    background: rgba(30, 30, 30, 0.8);
+                    border-radius: 8px;
+                    border: 1px solid #374151;
+                    overflow: hidden;
+                  "
+                >
+                  <div
+                    style="
+                      padding: 1rem;
+                      border-bottom: 1px solid #374151;
+                      display: flex;
+                      align-items: center;
+                      justify-content: space-between;
+                    "
+                  >
+                    <h3 style="color: #f4f4f5; font-size: 0.9rem; margin: 0">
+                      Recent Files
+                    </h3>
+                    <button
+                      style="
+                        background: #dc2626;
+                        color: white;
+                        border: none;
+                        padding: 0.25rem 0.5rem;
+                        border-radius: 4px;
+                        font-size: 0.7rem;
+                      "
+                    >
+                      + Upload
+                    </button>
+                  </div>
+
+                  <div style="padding: 0">
+                    <div
+                      style="
+                        display: flex;
+                        align-items: center;
+                        padding: 0.75rem 1rem;
+                        border-bottom: 1px solid #374151;
+                      "
+                    >
+                      <div style="color: #dc2626; margin-right: 0.75rem">
+                        <i
+                          class="fas fa-file-pdf"
+                          style="font-size: 0.8rem"
+                        ></i>
+                      </div>
+                      <div style="flex: 1">
+                        <div style="color: #f4f4f5; font-size: 0.8rem">
+                          Financial_Report_Q4.pdf
+                        </div>
+                        <div style="color: #6b7280; font-size: 0.7rem">
+                          Shared with 3 users • Expires in 2 days
+                        </div>
+                      </div>
+                      <div style="color: #22c55e; font-size: 0.7rem">
+                        <i class="fas fa-shield-alt"></i>
+                      </div>
+                    </div>
+
+                    <div
+                      style="
+                        display: flex;
+                        align-items: center;
+                        padding: 0.75rem 1rem;
+                        border-bottom: 1px solid #374151;
+                      "
+                    >
+                      <div style="color: #dc2626; margin-right: 0.75rem">
+                        <i
+                          class="fas fa-file-alt"
+                          style="font-size: 0.8rem"
+                        ></i>
+                      </div>
+                      <div style="flex: 1">
+                        <div style="color: #f4f4f5; font-size: 0.8rem">
+                          Contract_Agreement.docx
+                        </div>
+                        <div style="color: #6b7280; font-size: 0.7rem">
+                          Private • No expiration
+                        </div>
+                      </div>
+                      <div style="color: #22c55e; font-size: 0.7rem">
+                        <i class="fas fa-shield-alt"></i>
+                      </div>
+                    </div>
+
+                    <div
+                      style="
+                        display: flex;
+                        align-items: center;
+                        padding: 0.75rem 1rem;
+                      "
+                    >
+                      <div style="color: #dc2626; margin-right: 0.75rem">
+                        <i
+                          class="fas fa-file-image"
+                          style="font-size: 0.8rem"
+                        ></i>
+                      </div>
+                      <div style="flex: 1">
+                        <div style="color: #f4f4f5; font-size: 0.8rem">
+                          Product_Mockups.zip
+                        </div>
+                        <div style="color: #6b7280; font-size: 0.7rem">
+                          Shared with team@company.com • 5 downloads left
+                        </div>
+                      </div>
+                      <div style="color: #22c55e; font-size: 0.7rem">
+                        <i class="fas fa-shield-alt"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <h2>Why Choose DripVault?</h2>
+            <p>
+              Enterprise-grade security meets intuitive design. Built for teams
+              who can't afford to compromise on data protection.
+            </p>
+          </div>
+
+          <div class="features-grid">
+            <div class="feature-card fade-in-up">
+              <div class="feature-icon">
+                <i class="fas fa-shield-alt"></i>
+              </div>
+              <h3>End-to-End Encryption</h3>
+              <p>
+                Military-grade AES-256 encryption ensures your files remain
+                secure from upload to download. Zero-knowledge architecture
+                means even we can't see your data.
+              </p>
+            </div>
+
+            <div class="feature-card fade-in-up">
+              <div class="feature-icon">
+                <i class="fas fa-clock"></i>
+              </div>
+              <h3>Smart Expiration</h3>
+              <p>
+                Set automatic expiration dates for sensitive documents. Files
+                self-destruct after the specified time, leaving no trace behind.
+              </p>
+            </div>
+
+            <div class="feature-card fade-in-up">
+              <div class="feature-icon">
+                <i class="fas fa-chart-line"></i>
+              </div>
+              <h3>Complete Audit Trail</h3>
+              <p>
+                Track every interaction with your files. Know exactly who
+                accessed what, when, and from where with detailed analytics and
+                reporting.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" style="background: rgba(15, 15, 15, 0.5)">
+        <div class="container">
+          <div class="section-header">
+            <h2>Trusted by Teams Worldwide</h2>
+            <p>
+              Join thousands of organizations who trust DripVault with their
+              most sensitive documents.
+            </p>
+          </div>
+
+          <div
+            style="
+              display: grid;
+              grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+              gap: 2rem;
+              margin-top: 3rem;
+            "
+          >
+            <div
+              style="
+                text-align: center;
+                padding: 2rem;
+                background: rgba(30, 30, 30, 0.8);
+                border-radius: 12px;
+                border: 1px solid #374151;
+              "
+            >
+              <div style="font-size: 3rem; color: #dc2626; margin-bottom: 1rem">
+                10K+
+              </div>
+              <h4>Active Users</h4>
+              <p>Teams using DripVault daily</p>
+            </div>
+
+            <div
+              style="
+                text-align: center;
+                padding: 2rem;
+                background: rgba(30, 30, 30, 0.8);
+                border-radius: 12px;
+                border: 1px solid #374151;
+              "
+            >
+              <div style="font-size: 3rem; color: #dc2626; margin-bottom: 1rem">
+                99.9%
+              </div>
+              <h4>Uptime</h4>
+              <p>Guaranteed availability</p>
+            </div>
+
+            <div
+              style="
+                text-align: center;
+                padding: 2rem;
+                background: rgba(30, 30, 30, 0.8);
+                border-radius: 12px;
+                border: 1px solid #374151;
+              "
+            >
+              <div style="font-size: 3rem; color: #dc2626; margin-bottom: 1rem">
+                1M+
+              </div>
+              <h4>Files Secured</h4>
+              <p>Documents protected monthly</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <h2>Ready to Secure Your Files?</h2>
+            <p>
+              Start protecting your sensitive documents today with a 14-day free
+              trial. No credit card required.
+            </p>
+          </div>
+
+          <div style="text-align: center">
+            <a
+              href="signup.html"
+              class="btn btn-primary"
+              style="font-size: 1.2rem; padding: 1rem 2rem"
+            >
+              <i class="fas fa-shield-alt"></i>
+              Get Started Now
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h4>Product</h4>
+            <ul>
+              <li><a href="features.html">Features</a></li>
+              <li><a href="pricing.html">Pricing</a></li>
+              <li><a href="#">Security</a></li>
+              <li><a href="#">API</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Press</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h4>Support</h4>
+            <ul>
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">Documentation</a></li>
+              <li><a href="#">Status</a></li>
+              <li><a href="contact.html">Contact Support</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h4>Legal</h4>
+            <ul>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Cookie Policy</a></li>
+              <li><a href="#">GDPR</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-discord"></i></a>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2024 DripVault. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Mobile menu toggle
+      const mobileToggle = document.querySelector(".mobile-menu-toggle");
+      const navLinks = document.querySelector(".nav-links");
+
+      mobileToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+
+      // Fade in animation on scroll
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px",
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("fade-in-up");
+          }
+        });
+      }, observerOptions);
+
+      document.querySelectorAll(".feature-card").forEach((card) => {
+        observer.observe(card);
+      });
+    </script>
+  </body>
+</html>

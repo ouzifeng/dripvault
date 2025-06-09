@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up - DripVault</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><text y='14'>🔒</text></svg>"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="container">
+        <a href="index.html" class="logo">
+          <i class="fas fa-vault"></i>
+          DripVault
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="features.html">Features</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <div class="auth-buttons">
+            <a href="login.html" class="btn btn-secondary">Login</a>
+            <a href="signup.html" class="btn btn-primary">Sign Up</a>
+          </div>
+        </ul>
+        <div class="mobile-menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+
+    <main
+      style="
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: calc(100vh - 160px);
+        padding: 2rem 0;
+      "
+    >
+      <div class="form-container">
+        <div style="text-align: center; margin-bottom: 2rem">
+          <div style="font-size: 3rem; color: #dc2626; margin-bottom: 1rem">
+            <i class="fas fa-vault"></i>
+          </div>
+          <h1 style="margin-bottom: 0.5rem">Create Your Account</h1>
+          <p style="color: #a1a1aa">Start securing your documents today</p>
+        </div>
+
+        <form action="#" method="POST">
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem">
+            <div class="form-group">
+              <label for="firstName">First Name</label>
+              <input
+                type="text"
+                id="firstName"
+                name="firstName"
+                required
+                placeholder="Enter your first name"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="lastName">Last Name</label>
+              <input
+                type="text"
+                id="lastName"
+                name="lastName"
+                required
+                placeholder="Enter your last name"
+              />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="Enter your email"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="company">Company (Optional)</label>
+            <input
+              type="text"
+              id="company"
+              name="company"
+              placeholder="Enter your company name"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              required
+              placeholder="Create a strong password"
+            />
+            <div style="margin-top: 0.5rem; font-size: 0.8rem; color: #6b7280">
+              Must be at least 8 characters with numbers and symbols
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="confirmPassword">Confirm Password</label>
+            <input
+              type="password"
+              id="confirmPassword"
+              name="confirmPassword"
+              required
+              placeholder="Confirm your password"
+            />
+          </div>
+
+          <div class="form-group">
+            <label
+              style="
+                display: flex;
+                align-items: flex-start;
+                gap: 0.5rem;
+                cursor: pointer;
+                color: #a1a1aa;
+                font-size: 0.9rem;
+                line-height: 1.5;
+              "
+            >
+              <input
+                type="checkbox"
+                required
+                style="accent-color: #dc2626; margin-top: 0.2rem"
+              />
+              I agree to the
+              <a href="#" style="color: #dc2626; text-decoration: none"
+                >Terms of Service</a
+              >
+              and
+              <a href="#" style="color: #dc2626; text-decoration: none"
+                >Privacy Policy</a
+              >
+            </label>
+          </div>
+
+          <button
+            type="submit"
+            class="btn btn-primary"
+            style="width: 100%; margin-bottom: 1.5rem"
+          >
+            <i class="fas fa-rocket"></i>
+            Start Free Trial
+          </button>
+
+          <div style="text-align: center; margin-bottom: 2rem">
+            <span style="color: #6b7280">or sign up with</span>
+          </div>
+
+          <div
+            style="
+              display: grid;
+              grid-template-columns: 1fr 1fr;
+              gap: 1rem;
+              margin-bottom: 2rem;
+            "
+          >
+            <button
+              type="button"
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 0.5rem;
+                padding: 0.75rem;
+                border: 1px solid #374151;
+                border-radius: 8px;
+                background: rgba(30, 30, 30, 0.8);
+                color: #e4e4e7;
+                text-decoration: none;
+                transition: all 0.3s ease;
+                cursor: pointer;
+              "
+            >
+              <i class="fab fa-google"></i>
+              Google
+            </button>
+            <button
+              type="button"
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 0.5rem;
+                padding: 0.75rem;
+                border: 1px solid #374151;
+                border-radius: 8px;
+                background: rgba(30, 30, 30, 0.8);
+                color: #e4e4e7;
+                text-decoration: none;
+                transition: all 0.3s ease;
+                cursor: pointer;
+              "
+            >
+              <i class="fab fa-microsoft"></i>
+              Microsoft
+            </button>
+          </div>
+        </form>
+
+        <div
+          style="
+            text-align: center;
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid #374151;
+          "
+        >
+          <p style="color: #a1a1aa">
+            Already have an account?
+            <a
+              href="login.html"
+              style="color: #dc2626; text-decoration: none; font-weight: 600"
+              >Sign in here</a
+            >
+          </p>
+        </div>
+
+        <div
+          style="
+            background: rgba(220, 38, 38, 0.1);
+            border: 1px solid rgba(220, 38, 38, 0.3);
+            border-radius: 8px;
+            padding: 1rem;
+            margin-top: 2rem;
+          "
+        >
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              gap: 0.5rem;
+              margin-bottom: 0.5rem;
+              color: #dc2626;
+              font-weight: 600;
+            "
+          >
+            <i class="fas fa-shield-alt"></i>
+            Free Trial Includes:
+          </div>
+          <ul
+            style="
+              list-style: none;
+              padding: 0;
+              margin: 0;
+              color: #a1a1aa;
+              font-size: 0.9rem;
+            "
+          >
+            <li style="padding: 0.25rem 0">
+              <i
+                class="fas fa-check"
+                style="color: #22c55e; margin-right: 0.5rem"
+              ></i
+              >14 days full access
+            </li>
+            <li style="padding: 0.25rem 0">
+              <i
+                class="fas fa-check"
+                style="color: #22c55e; margin-right: 0.5rem"
+              ></i
+              >No credit card required
+            </li>
+            <li style="padding: 0.25rem 0">
+              <i
+                class="fas fa-check"
+                style="color: #22c55e; margin-right: 0.5rem"
+              ></i
+              >All premium features
+            </li>
+            <li style="padding: 0.25rem 0">
+              <i
+                class="fas fa-check"
+                style="color: #22c55e; margin-right: 0.5rem"
+              ></i
+              >Cancel anytime
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+
+    <footer style="margin-top: 0">
+      <div class="container">
+        <div
+          class="footer-bottom"
+          style="padding: 2rem 0; border-top: 1px solid #2a2a2a"
+        >
+          <p>&copy; 2024 DripVault. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Mobile menu toggle
+      const mobileToggle = document.querySelector(".mobile-menu-toggle");
+      const navLinks = document.querySelector(".nav-links");
+
+      mobileToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+
+      // Form validation and submission
+      document.querySelector("form").addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const password = document.getElementById("password").value;
+        const confirmPassword =
+          document.getElementById("confirmPassword").value;
+
+        if (password !== confirmPassword) {
+          alert("Passwords do not match. Please try again.");
+          return;
+        }
+
+        if (password.length < 8) {
+          alert("Password must be at least 8 characters long.");
+          return;
+        }
+
+        alert(
+          "Account created successfully! Welcome to DripVault. Check your email to verify your account."
+        );
+      });
+    </script>
+  </body>
+</html>
